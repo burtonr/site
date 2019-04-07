@@ -1,5 +1,5 @@
 # Site settings
-baseurl = "www.burtonr.com"
+baseurl = "/"
 languageCode = "en-us"
 title = "BurtonR"
 theme = "hugo-agency-theme"
