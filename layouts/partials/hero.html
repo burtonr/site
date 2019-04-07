@@ -1,0 +1,10 @@
+{{ "<!-- Hero -->" | safeHTML }}
+<header>
+  <div class="container">
+    <div class="intro-text">
+      <img class="img-circle img-responsive hero-image" src="./img/burtonr.png" alt="">
+      <div class="intro-heading">{{ with .Site.Params.hero.subtitle }}{{ . | markdownify }}{{ end }}</div>
+      <div class="intro-lead-in">{{ with .Site.Params.hero.title }}{{ . | markdownify }}{{ end }}</div>
+    </div>
+  </div>
+</header>
