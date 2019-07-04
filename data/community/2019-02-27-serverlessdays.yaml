@@ -1,7 +1,5 @@
-modalID: 1
 title: ServerlessDays ATX
-subtitle: Serverless Functions Made Simple for Docker and Kubernetes
-date: Oct 2017
-img: serverless_logo.png
+date: Feb 2019
+img: serverlessdays.png
 talk: Serverless Functions on Your Terms with OpenFaaS
 link: https://atx.serverlessdays.io/talk-burton-rheutan-serverless-functions-your-terms-openfaas.html

@@ -47,6 +47,12 @@
           </li>
         {{ end }}
 
+        {{ if .Site.Params.community.enable }}
+          <li>
+            <a class="page-scroll" href="{{ .Site.BaseURL }}#community">{{ with .Site.Params.navigation.community }}{{ . }}{{ end }}</a>
+          </li>
+        {{ end }}
+
         {{ if .Site.Params.career.enable }}
           <li>
             <a class="page-scroll" href="{{ .Site.BaseURL }}#career">{{ with .Site.Params.navigation.career }}{{ . }}{{ end }}</a>

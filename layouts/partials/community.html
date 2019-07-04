@@ -11,7 +11,7 @@
 
       {{ range .Site.Data.community }}
         <div class="col-md-4 col-sm-6 community-item">
-          <a href="{{ .link }}" location="_blank" rel="noopener noreferrer" class="community-link">
+          <a href="{{ .link }}" target="_blank" rel="noopener noreferrer" class="community-link">
             <div class="community-date">
                 <span>{{.date}}</span>
             </div>
@@ -22,10 +22,6 @@
                 <p class="text-muted">{{ .talk | markdownify }}</p>
             </div>
           </a>
-          <!-- <div class="community-caption">
-            <h4>{{ .title | markdownify }}</h4>
-            <p class="text-muted">{{ .talk | markdownify }}</p>
-          </div> -->
         </div>
       {{ end }}
 

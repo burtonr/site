@@ -190,8 +190,8 @@ section h3.timeline-subtitle {
     max-width: 400px;
     color: inherit;
 
-    height: 260px;
-    max-height: 260px;
+    height: 240px;
+    max-height: 240px;
 }
 
 #community .community-date {
@@ -201,23 +201,13 @@ section h3.timeline-subtitle {
 
 #community .community-item .community-link img {
     max-height: 180px;
+    margin: auto;
 }
-
-/* #community .community-item .community-link .community-hover {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    text-decoration: none;
-    -webkit-transition: all ease .5s;
-    -moz-transition: all ease .5s;
-    transition: all ease .5s;
-} */
 
 #community .community-item .community-link:hover {
     opacity: 1;
     text-decoration: none;
-    border-bottom: 2px solid green;
+    border-bottom: 2px solid rgba(254,209,54,.9);
 }
 
 #community .community-item .community-link .community-hover .community-hover-content {
@@ -245,7 +235,7 @@ section h3.timeline-subtitle {
     padding: 25px;
     max-width: 400px;
     text-align: center;
-    background-color: #fff;
+    /* background-color: #fff; */
 }
 
 #community .community-item .community-caption h4 {
