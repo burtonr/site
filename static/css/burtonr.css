@@ -19,3 +19,243 @@ section h3.timeline-subtitle {
     font-style: italic;
     font-weight: 400;
 }
+
+#projects .projects-item {
+    right: 0;
+    margin: 0 0 15px;
+}
+
+#projects .projects-item .projects-link {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    max-width: 400px;
+}
+
+#projects .projects-item .projects-link img {
+    height: 240px;
+}
+
+#projects .projects-item .projects-link .projects-hover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background: rgba(254,209,54,.9);
+    -webkit-transition: all ease .5s;
+    -moz-transition: all ease .5s;
+    transition: all ease .5s;
+}
+
+#projects .projects-item .projects-link .projects-hover:hover {
+    opacity: 1;
+}
+
+#projects .projects-item .projects-link .projects-hover .projects-hover-content {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 20px;
+    margin-top: -12px;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+}
+
+#projects .projects-item .projects-link .projects-hover .projects-hover-content i {
+    margin-top: -12px;
+}
+
+#projects .projects-item .projects-link .projects-hover .projects-hover-content h3,
+#projects .projects-item .projects-link .projects-hover .projects-hover-content h4 {
+    margin: 0;
+}
+
+#projects .projects-item .projects-caption {
+    margin: 0 auto;
+    padding: 25px;
+    max-width: 400px;
+    text-align: center;
+    background-color: #fff;
+}
+
+#projects .projects-item .projects-caption h4 {
+    margin: 0;
+    text-transform: none;
+}
+
+#projects .projects-item .projects-caption p {
+    margin: 0;
+    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    font-style: italic;
+}
+
+#projects * {
+    z-index: 2;
+}
+
+@media(min-width:767px) {
+    #projects .projects-item {
+        margin: 0 0 30px;
+    }
+}
+
+.projects-modal .modal-content {
+    padding: 100px 0;
+    min-height: 100%;
+    border: 0;
+    border-radius: 0;
+    text-align: center;
+    background-clip: border-box;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.projects-modal .modal-content h2 {
+    margin-bottom: 15px;
+    font-size: 3em;
+}
+
+.projects-modal .modal-content p {
+    margin-bottom: 30px;
+}
+
+.projects-modal .modal-content p.item-intro {
+    margin: 20px 0 30px;
+    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    font-style: italic;
+}
+
+.projects-modal .modal-content ul.list-inline {
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.projects-modal .modal-content img {
+    margin-bottom: 30px;
+}
+
+.projects-modal .close-modal {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    width: 75px;
+    height: 75px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.projects-modal .close-modal:hover {
+    opacity: .3;
+}
+
+.projects-modal .close-modal .lr {
+    z-index: 1051;
+    width: 1px;
+    height: 75px;
+    margin-left: 35px;
+    background-color: #222;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.projects-modal .close-modal .lr .rl {
+    z-index: 1052;
+    width: 1px;
+    height: 75px;
+    background-color: #222;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.projects-modal .modal-backdrop {
+    display: none;
+    opacity: 0;
+}
+
+/* Community */
+#community .community-item {
+    right: 0;
+    margin: 0 0 15px;
+}
+
+#community .community-item .community-link {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    max-width: 400px;
+    color: inherit;
+
+    height: 240px;
+    max-height: 240px;
+}
+
+#community .community-date {
+    text-align: center;
+    font-weight: bold;
+}
+
+#community .community-item .community-link img {
+    max-height: 180px;
+    margin: auto;
+}
+
+#community .community-item .community-link:hover {
+    opacity: 1;
+    text-decoration: none;
+    border-bottom: 2px solid rgba(254,209,54,.9);
+}
+
+#community .community-item .community-link .community-hover .community-hover-content {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 20px;
+    margin-top: -12px;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+}
+
+#community .community-item .community-link .community-hover .community-hover-content i {
+    margin-top: -12px;
+}
+
+#community .community-item .community-link .community-hover .community-hover-content h3,
+#community .community-item .community-link .community-hover .community-hover-content h4 {
+    margin: 0;
+}
+
+#community .community-item .community-caption {
+    margin: 0 auto;
+    padding: 25px;
+    max-width: 400px;
+    text-align: center;
+    /* background-color: #fff; */
+}
+
+#community .community-item .community-caption h4 {
+    margin: 0;
+    text-transform: none;
+}
+
+#community .community-item .community-caption p {
+    margin: 0;
+    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    font-style: italic;
+}
+
+#community * {
+    z-index: 2;
+}
+
+@media(min-width:767px) {
+    #community .community-item {
+        margin: 0 0 30px;
+    }
+}

@@ -35,21 +35,27 @@
           </li>
         {{ end }}
 
-        {{ if .Site.Params.services.enable }}
-          <li>
-            <a class="page-scroll" href="{{ .Site.BaseURL }}#services">{{ with .Site.Params.navigation.services }}{{ . }}{{ end }}</a>
-          </li>
-        {{ end }}
-
-        {{ if .Site.Params.portfolio.enable }}
-          <li>
-            <a class="page-scroll" href="{{ .Site.BaseURL }}#portfolio">{{ with .Site.Params.navigation.portfolio }}{{ . }}{{ end }}</a>
-          </li>
-        {{ end }}
-
         {{ if .Site.Params.about.enable }}
           <li>
             <a class="page-scroll" href="{{ .Site.BaseURL }}#about">{{ with .Site.Params.navigation.about }}{{ . }}{{ end }}</a>
+          </li>
+        {{ end }}
+
+        {{ if .Site.Params.projects.enable }}
+          <li>
+            <a class="page-scroll" href="{{ .Site.BaseURL }}#projects">{{ with .Site.Params.navigation.projects }}{{ . }}{{ end }}</a>
+          </li>
+        {{ end }}
+
+        {{ if .Site.Params.community.enable }}
+          <li>
+            <a class="page-scroll" href="{{ .Site.BaseURL }}#community">{{ with .Site.Params.navigation.community }}{{ . }}{{ end }}</a>
+          </li>
+        {{ end }}
+
+        {{ if .Site.Params.career.enable }}
+          <li>
+            <a class="page-scroll" href="{{ .Site.BaseURL }}#career">{{ with .Site.Params.navigation.career }}{{ . }}{{ end }}</a>
           </li>
         {{ end }}
 

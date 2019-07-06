@@ -36,9 +36,10 @@ googleAnalytics = ""
     brand = "BurtonR"
     # Optional logo as brand stored in img/
     #logo = "logo.svg"
-    services = "About"
-    portfolio = "Projects"
-    about = "Career"
+    about = "About"
+    projects = "Projects"
+    community = "Community"
+    career = "Career"
     contact = "Contact"
     footer = "Links"
 
@@ -62,97 +63,108 @@ googleAnalytics = ""
 
 
   # Services section
-  [params.services]
+  [params.about]
     enable = true
     title = "About"
     # subtitle = "Skills and Expertise"
     subtitle = "I am a practicing Software Engineer. <br />I believe that software engineering is a practice, much like doctors practice medicine. <br />There are no right solutions. Some more suited to situations better than others, but there is always another way. <br />Because software engineering is a practice, I never stop learning and asking questions. <br />I am also passionate about sharing my knowledge with others through pair-programming, demonstrations, and presentations. <br />I will never know it all, but the journey is exciting!"
 
-    [[params.services.row]]
+    [[params.about.row]]
 
-    [[params.services.row.list]]
+    [[params.about.row.list]]
       icon = "fa-code"
       title = "Backend"
       description = "Design and build APIs using C#, .NET Core, NodeJS, and Go. Create reusable data-access services. Database design and optimizations in both SQL and MongoDB. Automatic file input/output and processing, and other back-end services."
       
-    [[params.services.row.list]]
+    [[params.about.row.list]]
       icon = "fa-laptop"
       title = "Frontend"
       description = "Design and build websites using a variety of frameworks including, but not limited to, Angular 2+, React, Vue. Desktop applications using WPF and Electron. Optimize load times, site performance, and security."
       
-    [[params.services.row.list]]
+    [[params.about.row.list]]
       icon = "fa-terminal"
       title = "Infrastructure"
       description = "Set up, configure, and maintain a variety of network infrastructure including Windows and Linux servers, routers, and firewalls. Setup Continuous Integration/Delivery system with Atlassian tools, Jenkins, TeamCity, Git and TFS, Docker, Kubernetes"
       
-  # Portfolio section
-  [params.portfolio]
+  # Projects section
+  [params.projects]
     enable = true
     title = "Projects"
     subtitle = "Open source projects I contribute to or have created"
 
-    [params.portfolio.modal]
+    [params.projects.modal]
+      date = "Date"
+      category = "Category"
+      buttonText = "Close"
+
+  # Community section
+  [params.community]
+    enable = true
+    title = "Community"
+    subtitle = "Talks and Presentations"
+
+    [params.community.modal]
       date = "Date"
       category = "Category"
       buttonText = "Close"
 
 
-    # About section
-  [params.about]
+    # Career section
+  [params.career]
     enable = true
     title = "Career"
     subtitle = "Places I've worked and things I've done"
 
-    [[params.about.job]]
+    [[params.career.job]]
         img = "kgb.png"
         date = "Mar 2017 - Current"
         company = "kgb USA"
         title = "Full-Stack Software Engineer"
         description = "Part of small team working with Angular 4 front-end, multiple C# microservices, and MS-SQL databases. File processing service in Go. Integral part of process moving from TFS to Git, TeamCity to Jenkins, and .NET Framework to .NET Core."
 
-    [[params.about.job]]
+    [[params.career.job]]
         img = "gm.png"
         date = "Jul 2016 - Mar 2017"
         company = "General Motors (GM)"
         title = "Software Developer"
         description = "Software developer in the Manufacturing/Engineering department. Acting as team lead for 6 developers working in C# and Java."
 
-    [[params.about.job]]
+    [[params.career.job]]
         img = "boon-group.png"
         date = "Jan 2015 - Jul 2016"
         company = "The Boon Group"
         title = "Software Engineer"
         description = "Software engineer responsible for upgrading legacy systems to modern applications using latest web technologies such as Bootstrap and jQuery. Automating manual tasks of importing, converting, and sending healthcare enrollment and claims documents."
 
-    [[params.about.job]]
+    [[params.career.job]]
         img = "boon-group.png"
         date = "Oct 2013 - Jan 2015"
         company = "The Boon Group"
         title = "Jr. .Net Web Developer"
         description = "Responsible for maintaining internal and external facing web applications. Debugging, and correcting issues within SQL stored procedures. Creating custom reports and adding new features to provide internal users more visibility into the data."
 
-    [[params.about.job]]
+    [[params.career.job]]
         img = "uofp.png"
         date = "Mar 2011 - May 2013"
         company = "University Of Phoenix"
         title = "Bachelor of Science in Information Technology"
         description = "Completed advanced courses in mathematics, and computer science including Finite Mathematics and Software Architecture. Graduated with 3.9 GPA"
 
-    [[params.about.job]]
+    [[params.career.job]]
         img = "bmw.png"
         date = "Nov 2007 - Jul 2013"
         company = "Chapman BMW on Camelback"
         title = "Level 1 Technitian"
         description = "Level 1 technician bumper-to-bumper. Specializing in electronics and electrical concerns. Worked closely with Regional Technical Engineers diagnosis electronic issues. Maintained top 5 most hours completed."
 
-    [[params.about.job]]
+    [[params.career.job]]
         img = "uti.png"
         date = "Nov 2007 - Aug 2010"
         company = "Universal Technical Institute"
         title = "Automotive, Diesel, Ford, BMW"
         description = "Completed courses in several specialized areas including Engine Performance, Diesel, Heavy Truck, Ford, and Electrical. Accepted into and completed BMW STEP program to become certified BMW technician. Director's List for 5 courses."
 
-    [[params.about.job]]
+    [[params.career.job]]
         img = "navy.png"
         date = "Jul 2002 - Nov 2007"
         company = "US Navy"
@@ -193,5 +205,5 @@ googleAnalytics = ""
 
     [[params.footer.social]]
         icon = "fa-envelope"
-        link = "mailto:burton@burtonr.com"
-        title = "burton@burtonr.com"
+        link = "mailto:burton@rheutan.dev"
+        title = "burton@rheutan.dev"

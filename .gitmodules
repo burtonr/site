@@ -1,4 +1,4 @@
-[submodule "public"]
-	path = public
-	url = git@github.com:burtonr/BurtonR.github.io.git
-	branch = master
+[submodule "themes/hugo-agency-theme"]
+    path = themes/hugo-agency-theme
+    url = https://github.com/digitalcraftsman/hugo-agency-theme.git
+    branch = master
