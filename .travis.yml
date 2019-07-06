@@ -21,4 +21,4 @@ script:
 - hugo
 
 after_success:
-- rsync -avz --delete public/ travis@${HOST}:/var/www/burtonr.dev
+- rsync -avz --no-o --no-g --delete public/ travis@${HOST}:/var/www/burtonr.dev
