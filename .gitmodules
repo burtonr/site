@@ -1,0 +1,4 @@
+[submodule "themes/hugo-agency-theme"]
+    path = themes/hugo-agency-theme
+    url = git@github.com:digitalcraftsman/hugo-agency-theme.git
+    branch = master
