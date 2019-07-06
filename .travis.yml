@@ -7,7 +7,6 @@ addons:
 branches:
   only:
   - master
-  - community
 
 before_install:
 - openssl aes-256-cbc -K $encrypted_cf7601538c18_key -iv $encrypted_cf7601538c18_iv
