@@ -154,7 +154,7 @@ googleAnalytics = ""
         img = "bmw.png"
         date = "Nov 2007 - Jul 2013"
         company = "Chapman BMW on Camelback"
-        title = "Level 1 Technitian"
+        title = "Level 1 Technician"
         description = "Level 1 technician bumper-to-bumper. Specializing in electronics and electrical concerns. Worked closely with Regional Technical Engineers diagnosis electronic issues. Maintained top 5 most hours completed."
 
     [[params.career.job]]
