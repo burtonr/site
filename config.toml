@@ -116,8 +116,15 @@ googleAnalytics = ""
     subtitle = "Places I've worked and things I've done"
 
     [[params.career.job]]
+        img = "dell.jpg"
+        date = "Oct 2019 - Current"
+        company = "Dell Technologies"
+        title = "Principal Software Engineer"
+        description = "Design, architect, and implement migration of monolithic web-based application to a cloud-native, event-driven microservice architecture. Teach and mentor the team on cloud-native best practices by sharing proof of concept projects, demonstrations, and code reviews. Introduced CI/CD workflows, containerization technologies including Docker and Kubernetes, and event-driven design"
+
+    [[params.career.job]]
         img = "kgb.png"
-        date = "Mar 2017 - Current"
+        date = "Mar 2017 - Oct 2019"
         company = "kgb USA"
         title = "Full-Stack Software Engineer"
         description = "Part of small team working with Angular 4 front-end, multiple C# microservices, and MS-SQL databases. File processing service in Go. Integral part of process moving from TFS to Git, TeamCity to Jenkins, and .NET Framework to .NET Core."
