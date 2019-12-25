@@ -1,0 +1,17 @@
+name: Build and Release
+
+on:
+  push:
+    branches: 
+      - actions-test
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      id: checkout
+      uses: actions/checkout@v1
+      with:
+        submodules: true
