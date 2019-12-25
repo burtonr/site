@@ -25,3 +25,10 @@ jobs:
     - name: Hugo Build
       id: hugo_build
       run: hugo --minify
+
+    - name: Archive Files
+      id: archive_files
+      run: (cd public && zip -qr site.zip . && mv site.zip ../)
+
+    - name: List Directory
+      run: ls -alh
