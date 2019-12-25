@@ -4,6 +4,8 @@ on:
   push:
     branches: 
       - actions-test
+    tags:
+    - 'v*'
 
 jobs:
   build:
@@ -30,5 +32,13 @@ jobs:
       id: archive_files
       run: (cd public && zip -qr site.zip . && mv site.zip ../)
 
-    - name: List Directory
-      run: ls -alh
+    - name: Create Release
+      id: create_release
+      uses: actions/create-release@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        tag_name: ${{ github.ref }}
+        release_name: Release ${{ github.ref }}
+        draft: false
+        prerelease: false
