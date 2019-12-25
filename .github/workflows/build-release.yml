@@ -2,8 +2,6 @@ name: Build and Release
 
 on:
   push:
-    branches: 
-      - actions-test
     tags:
     - 'v*'
 
