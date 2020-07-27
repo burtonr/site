@@ -58,7 +58,7 @@ jobs:
     steps:
       - name: Deploy with Octopus
         id: deploy_with_octopus
-        uses: burtonr/octopus-release-action@0.4
+        uses: burtonr/octopus-release-action@0.5
         with:
           octopus_url: ${{ secrets.OCTOPUS_URL }}
           api_key: ${{ secrets.OCTOPUS_API_KEY }}
