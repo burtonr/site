@@ -12,4 +12,4 @@ jobs:
     steps:
     - name: Trial
       id: trial
-      uses: docker://burtonr/githubactiontest:1.0
+      uses: docker://burtonr/githubactiontest:1.1
