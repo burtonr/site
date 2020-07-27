@@ -1,0 +1,66 @@
+name: Build and Release
+
+on:
+  push:
+    tags:
+    - '*.*'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      id: checkout
+      uses: actions/checkout@v1
+      with:
+        submodules: true
+
+    - name: Setup Hugo
+      id: setup_hugo
+      uses: peaceiris/actions-hugo@v2.3.2
+      with:
+        hugo-version: 'latest'
+
+    - name: Hugo Build
+      id: hugo_build
+      run: hugo --minify
+
+    - name: Archive Files
+      id: archive_files
+      run: (cd public && zip -qr site.zip . && mv site.zip ../)
+
+    - name: Create Release
+      id: create_release
+      uses: actions/create-release@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        tag_name: ${{ github.ref }}
+        release_name: Release ${{ github.ref }}
+        draft: false
+        prerelease: false
+
+    - name: Upload Release Asset
+      id: upload_release_asset
+      uses: actions/upload-release-asset@v1.0.1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: ./site.zip
+        asset_name: site.zip
+        asset_content_type: application/zip
+
+  release:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy with Octopus
+        id: deploy_with_octopus
+        uses: burtonr/octopus-release-action@0.4
+        with:
+          octopus_url: ${{ secrets.OCTOPUS_URL }}
+          api_key: ${{ secrets.OCTOPUS_API_KEY }}
+          project_name: 'burtonr.dev'
+          release_version: ${{ github.ref }}
