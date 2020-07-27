@@ -12,4 +12,4 @@ jobs:
     steps:
     - name: Trial
       id: trial
-      uses: docker://burtonr/githubactiontest:1.3
+      uses: docker://burtonr/octopus-action-client:0.3
