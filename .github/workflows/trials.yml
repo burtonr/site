@@ -1,0 +1,15 @@
+name: Trial Workflow
+
+on:
+  push:
+    branches:
+      - actions-test
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Trial
+      id: trial
+      uses: docker://burtonr/githubactiontest:1.0
