@@ -14,7 +14,7 @@ googleAnalytics = ""
   # To provide some metadata for search engines feel free to add a few
   # information about you and your website.
   name = "Burton Rheutan"
-  description = "Your description"
+  # description = "Your description"
   # email = "your@email.com"
 
   # Link custom assets relative to /static
@@ -50,10 +50,10 @@ googleAnalytics = ""
     #  weight = 10
 
     # postpended links
-    # [[menu.postpend]]
-    #   url = "http://gohugo.io"
-    #   name = "External link"
-    #   weight = 10
+    [[menu.postpend]]
+      url = "https://blog.burtonr.dev"
+      name = "Blog"
+      weight = 100
 
 
   # Hero section
