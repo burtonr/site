@@ -116,8 +116,15 @@ googleAnalytics = ""
     subtitle = "Places I've worked and things I've done"
 
     [[params.career.job]]
+        img = "hubsharp.png"
+        date = "Nov 2021 - Current"
+        company = "HubSharp Solutions"
+        title = "Principal DevOps Engineer"
+        description = "Consult, architect, and implement DevOps solutions for customers to automate their workflow and infrastructure in Kubernetes and various cloud providers including GCP, Azure, and AWS"
+
+    [[params.career.job]]
         img = "dell.jpg"
-        date = "Oct 2019 - Current"
+        date = "Oct 2019 - Nov 2021"
         company = "Dell Technologies"
         title = "Principal Software Engineer"
         description = "Design, architect, and implement migration of monolithic web-based application to a cloud-native, event-driven microservice architecture. Teach and mentor the team on cloud-native best practices by sharing proof of concept projects, demonstrations, and code reviews. Introduced CI/CD workflows, containerization technologies including Docker and Kubernetes, and event-driven design"

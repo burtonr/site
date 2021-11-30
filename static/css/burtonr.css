@@ -259,3 +259,7 @@ section h3.timeline-subtitle {
         margin: 0 0 30px;
     }
 }
+
+#career .timeline-image {
+    background: none;
+}
