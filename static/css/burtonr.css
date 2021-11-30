@@ -260,6 +260,7 @@ section h3.timeline-subtitle {
     }
 }
 
+/* override from agency.css */
 #career .timeline-image {
-    background: none;
+    background: none !important;
 }
